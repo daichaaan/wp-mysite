@@ -1,0 +1,1459 @@
+* {
+  scroll-behavior: smooth;
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ",
+    Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+
+  list-style: none;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* title css---------------- */
+.title {
+  display: flex;
+  background-color: #202d5d;
+  padding: 10px 20px 10px;
+  line-height: 1;
+}
+.title h2 {
+  font-size: 128%;
+  color: white;
+}
+
+.title p {
+  padding: 7px 0 0 7px;
+  font-size: small;
+  color: white;
+}
+
+.title a {
+  margin-left: auto;
+  font-size: smaller;
+  color: white;
+  padding-top: 7px;
+}
+
+.title a span {
+  padding-left: 10px;
+}
+/* title css------------------- */
+body {
+  display: block;
+  margin: 0 auto;
+}
+header {
+  width: 100%;
+  height: 6rem;
+}
+.header_nav {
+  max-width: 1024px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header_logo {
+  display: flex;
+  height: 3rem;
+  width: 35rem;
+}
+.header_logo a {
+  height: 100%;
+  width: 15rem;
+}
+.header_logo img {
+  width: 100%;
+  height: 100%;
+}
+.header_name {
+  display: flex;
+  flex-direction: column;
+  color: #202d5d;
+  padding-left: 2rem;
+}
+header h2 {
+  color: #202d5d;
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 1.1em;
+}
+header h1 {
+  color: #202d5d;
+  font-weight: bold;
+  line-height: initial;
+  font-size: 1.5rem;
+  padding-left: 2rem;
+}
+.header_right {
+}
+.header_search {
+  width: 100%;
+}
+.header_link {
+  font-size: small;
+  text-align: right;
+}
+/* 検索ボタン */
+#form {
+}
+#s-box {
+  height: 2.5rem;
+  padding: 0.5rem;
+  border: solid 1px #202d5d;
+  border-radius: 0.5rem;
+  background-color: #5e72bf1f;
+}
+#s-btn-area {
+  background: none;
+  color: #666;
+  border: none;
+  font-size: 1rem;
+  padding: 0;
+}
+#s-btn {
+  text-align: center;
+  background-color: #202d5d;
+  width: 50px;
+  padding: 0.5rem;
+  font-size: 1rem;
+  color: #fff;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+#s-btn:hover {
+  background-color: #5e72bf;
+}
+.contact {
+  font-size: small;
+  text-align: right;
+  margin-top: 0.5rem;
+}
+.contact a {
+  color: #202d5d;
+}
+.contact a:hover {
+  text-decoration-line: underline;
+}
+/* ---header.php ----------------------------------------------------------------------- */
+/* top画像 */
+.top_img_container {
+  height: 485px;
+  max-height: 485px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #dee3f8;
+}
+.top_img {
+  display: block;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+}
+.top_img img {
+  width: 1024px;
+  height: 100%;
+  margin: 0 auto;
+}
+/* ↑top画像 */
+/* ---nav_bar--- */
+.nav_bar {
+  height: 4rem;
+  width: 100%;
+  background-color: #fb6700;
+  flex-direction: column;
+}
+.nav_bar ul {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  max-width: 1024px;
+  width: 100%;
+  font-size: smaller;
+  padding: 0.5rem 0;
+}
+.nav_bar ul li {
+  border-right: 2px solid #ffa54f;
+  width: 100%;
+  height: 3rem;
+  text-align: center;
+  vertical-align: middle;
+}
+.bar_content:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+.bar_content {
+  color: white;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  height: 3rem;
+  width: 100%;
+  align-items: center;
+  flex-direction: column;
+}
+.bar_content p {
+  line-height: 1.5em;
+}
+/* ↑ navnar */
+/* ---main------------------------------------------------------------------------- */
+main {
+  background-color: #eeeeee;
+  padding: 1rem 0;
+}
+.container {
+  max-width: 1024px;
+  position: relative;
+  margin: 0 auto;
+}
+/* 試合結果-------------------- */
+.container_left {
+  width: 65%;
+}
+.game_result {
+  padding: 20px;
+  background-color: white;
+  margin-bottom: 1rem;
+}
+.game_result dl {
+  width: 100%;
+  margin: 10px 0 30px;
+}
+.game_result dl dt {
+  border-right: dotted 1px #1f2c5c;
+}
+.result {
+  width: 50%;
+}
+.result_inner {
+  text-align: center;
+}
+.result_inner p {
+  color: #202d5d;
+  font-size: medium;
+}
+.sex {
+  margin: 5px 0 30px;
+}
+.sex p {
+  display: inline-block;
+  width: 100%;
+  font-size: smaller;
+  color: #202d5d;
+}
+.sex p span {
+  background-color: #202d5d;
+  color: white;
+  padding: 5px 10px;
+}
+.ranking {
+  text-align: center;
+  color: #202d5d;
+  margin: 30px 0 20px;
+}
+.ranking span {
+  color: #f10000;
+  font-size: 40px;
+  font-weight: bold;
+}
+.result_btn a {
+  display: inline-block;
+  padding: 10px 20px;
+  color: white;
+  background-color: #202d5d;
+  font-size: smaller;
+}
+.result_btn a:hover {
+  background-color: #5e72bf;
+}
+.result_btn span {
+  padding-left: 10px;
+}
+/* ↑game_result ------------------------------------------- */
+/* tab_bar------ */
+.tab_bar {
+  width: 100%;
+  display: inline-block;
+  border-bottom: 3px solid #5e72bf;
+}
+.tab_bar ul {
+  width: 100%;
+}
+.tab_bar ul li {
+  border-left: 1px solid #eeeeee;
+  width: 20%;
+  margin: 0 auto;
+  background-color: #202d5d;
+  color: white;
+  padding: 10px 0 8px 0;
+  font-size: smaller;
+  display: block;
+  border-radius: 11px 11px 0 0;
+}
+.tab_bar ul li:hover {
+  background-color: #5e72bf;
+  cursor: pointer;
+}
+
+.tab_bar ul li span {
+  text-align: center;
+  display: block;
+}
+/* ↑tab_bar------------------------------------------------- */
+/* top_contets --------*/
+.top_contets {
+  background-color: white;
+  margin-bottom: 1rem;
+  padding: 0 1rem;
+  font-size: 14px;
+}
+
+.top_content {
+  color: #202d5d;
+  width: 100%;
+  border-bottom: solid 1px #a0a0a0;
+  padding: 1rem 0;
+}
+.top_content p {
+  display: inline-block;
+  margin-right: 1rem;
+}
+.top_content a {
+  color: white;
+  display: inline-block;
+  background-color: red;
+  margin-right: 1rem;
+  width: 100px;
+  text-align: center;
+}
+.top_content:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+.contents_more {
+  display: flex;
+  justify-content: flex-end;
+  text-align: end;
+  line-height: 4;
+}
+.contents_more a {
+  font-size: smaller;
+}
+.contents_more span {
+  padding-left: 10px;
+}
+/* top_contents-------------------------------------------- */
+/* report--------------- */
+.report {
+  background-color: white;
+  margin-bottom: 1rem;
+}
+.report_container {
+  width: 100%;
+}
+.report_container ul {
+  padding: 1rem 0.5rem 1.5rem;
+  display: flex;
+  justify-content: space-around;
+}
+.report_list {
+  display: inline-block;
+  width: 23%;
+  color: #1f2c5c;
+}
+.report_list img {
+  width: 100%;
+  height: 6rem;
+}
+.report_text {
+  line-height: 1.5rem;
+}
+.report_text h3 {
+  display: inline-block;
+  width: 100%;
+  height: 1.5rem;
+  font-size: small;
+  margin: 0.5rem 0;
+}
+.report_text p {
+  line-height: 1.5;
+  font-size: x-small;
+}
+/* report----------------------------------------------------- */
+/* right link------------------------------------------------- */
+.container_right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30%;
+}
+.banner_link {
+  display: block;
+  width: 100%;
+  height: auto;
+  padding-bottom: 16px;
+}
+.bannner_one img {
+  width: 100%;
+}
+.bannner_two img {
+  width: 100%;
+  margin-top: 5px;
+}
+/*  */
+/* ranking  */
+.league_ranking {
+  background-color: white;
+}
+.leagur_title {
+  background-color: #202d5d;
+  margin: 0 auto;
+  padding: 0.5rem 0;
+  text-align: center;
+}
+.leagur_title h2 {
+  color: white;
+}
+.man {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  line-height: 2rem;
+  font-size: 1rem;
+}
+.man li {
+  width: 100%;
+  text-align: center;
+  font-size: smaller;
+}
+.man_result a {
+  display: inline-block;
+}
+.man_result span {
+  font-size: 1.5rem;
+  color: #d51a02;
+}
+.league_ranking ul li a {
+  display: block;
+  padding: 0.5rem 0;
+  cursor: pointer;
+  color: #202d5d;
+}
+.ranking_table table {
+  width: 100%;
+  border-top: 1px solid #a0a0a0;
+  color: #202d5d;
+}
+.ranking_table table th {
+  border-bottom: 1px solid #a0a0a0;
+  text-align: right;
+  width: 15%;
+  padding: 0.5rem;
+  font-size: smaller;
+}
+.ranking_table table td {
+  font-size: small;
+  border-bottom: 1px solid #a0a0a0;
+}
+.league_ranking p {
+  padding: 0.5rem 1rem;
+  font-size: small;
+  text-align: right;
+}
+/* ranking------------------------------------------------ */
+/* link_bar */
+.link_bar_wrap {
+  padding: 1rem 0 0;
+  width: 100%;
+}
+.link_bar_wrap ul {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.link_bar_wrap ul li {
+  padding-bottom: 0.5rem;
+}
+.link_bar img {
+  width: 100%;
+}
+/* link_bar----------------------------------------------- */
+/* gallery */
+.gallery {
+  margin: 0 auto 1rem;
+}
+.gallery_container {
+  width: 100%;
+  height: 200px;
+  background-color: teal;
+}
+/* gallery------------------------------------------------- */
+/* footer */
+footer {
+  padding: 0 20px;
+  background-color: #ff6600;
+  background-image: url(https://daichaaan.github.io/MySite/img/footer_bg.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+}
+
+.footer_nav {
+  margin: 0 auto;
+  width: 1024px;
+  flex-direction: column;
+  padding: 20px 0 40px;
+}
+.footer_nav ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.footer_nav ul li {
+  border-right: 0.1px solid #ffa54f;
+  width: 100%;
+  text-align: center;
+}
+.first {
+  border-left: 2px solid #ffa54f;
+}
+
+.footer_nav ul li a {
+  color: white;
+  font-size: small;
+}
+
+footer p {
+  display: inline-block;
+  width: 100%;
+  color: white;
+  font-size: 65%;
+  text-align: center;
+  margin: 30px 0 10px;
+}
+/* footer_nav------------------------------------------------ */
+/* footer_nss--- */
+.footer_nss {
+  margin: 0 auto;
+  padding: 15px;
+  text-align: center;
+  vertical-align: middle;
+}
+.footer_nss p {
+  padding-right: 10px;
+  font-size: smaller;
+}
+.nss {
+  width: 130px;
+  height: 32px;
+  background-size: cover;
+}
+/* footer_nss---------------------------------------------- */
+/* NEWSページ */
+.news {
+  width: 1024px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.news_box {
+  width: 68%;
+  background-color: white;
+  color: #202d5d;
+}
+.news_title_list {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: solid 2px #fb6700;
+}
+.news_title {
+  display: flex;
+  padding: 25px 0px 25px 10px;
+  color: #1f2c5c;
+}
+.news_title h2 {
+  font-size: 2.5rem;
+  padding: 0px 3px;
+  font-family: "Arial Narrow Bold", arial, sans-serif;
+}
+.news_title p {
+  display: inline-block;
+  font-size: large;
+  margin-left: 0.5rem;
+  padding-top: 1rem;
+}
+.news_title::before {
+  content: "";
+  display: inline-block;
+  background-image: url(https://daichaaan.github.io/MySite/img/icon_news.png);
+  background-size: contain;
+  width: 40px;
+  margin: 0 10px;
+  height: 40px;
+}
+.news_main_list {
+  width: 100%;
+  padding: 2rem 1rem 1rem;
+}
+.news_contents {
+  display: flex;
+  color: #202d5d;
+  width: 100%;
+  border-bottom: solid 1px #a0a0a0;
+  padding: 1rem 0;
+}
+.news_contents p {
+  display: inline-block;
+  margin-right: 1rem;
+}
+.news_contents:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+/* news category */
+.category {
+  color: white;
+  display: inline-block;
+  margin-right: 1rem;
+  width: 100px;
+  text-align: center;
+}
+.event {
+  display: block;
+  width: 100%;
+  background-color: red;
+}
+.club {
+  display: block;
+  width: 100%;
+  background-color: orange;
+}
+.other {
+  display: block;
+  width: 100%;
+  background-color: #5e72bf;
+}
+/* new! CSS */
+.new-txt {
+  display: block;
+  background-color: yellow;
+  margin-left: 1rem;
+  border: solid 1px #202d5d;
+  color: #202d5d;
+  font-size: small;
+  padding: 2px;
+}
+/* pagenavi css */
+.wp-pagenavi {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wp-pagenavi a,
+.wp-pagenavi span {
+  background-color: #fff1da;
+  border: 1px solid #fddac2;
+  color: #202d5d;
+  padding: 0.3rem 0.5rem;
+  margin: 1rem 0.5rem 0rem;
+}
+.wp-pagenavi span.current {
+  color: #fff;
+  background-color: #fc872e;
+  border-color: #fc872e;
+  font-weight: bold;
+}
+.wp-pagenavi a:hover {
+  background-color: #ffcd93;
+  color: white;
+}
+/* news sidebar */
+.news_sub {
+  width: 30%;
+}
+.sub_title {
+  color: white;
+  background-color: #202d5d;
+  padding: 1rem;
+  margin-bottom: 2px;
+}
+.sub_title h3 {
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding-bottom: 3px;
+}
+.list_contents {
+  display: block;
+  background-color: #202d5d;
+  padding: 1rem;
+  margin-bottom: 1px;
+  font-size: small;
+}
+.list_contents:hover {
+  cursor: pointer;
+  background-color: #5e72bf;
+}
+.cat_space {
+  margin-right: 1rem;
+}
+/* single.php class */
+.single {
+  width: 100%;
+  padding: 1rem 1.5rem;
+  color: #202d5d;
+}
+.single__tags {
+  padding-bottom: 1rem;
+  display: flex;
+}
+.single__tags p {
+  margin-right: 1rem;
+}
+.single__ttl {
+  font-size: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: dotted 1px #5e72bf;
+  letter-spacing: 3px;
+  font-weight: lighter;
+}
+.single__content {
+  padding: 0 1.5rem;
+}
+.single_main_content {
+  padding-bottom: 2rem;
+  border-bottom: double 4px #5e72bf;
+  line-height: 2;
+}
+.single_content_menu {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  font-size: 8px;
+}
+.single_content_menu a {
+  color: #202d5d;
+}
+.previous {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: #202d5d;
+}
+.previous span {
+  padding-left: 2px;
+}
+.previous p {
+  margin: 2px;
+  display: inline-block;
+}
+.single_home {
+  width: 20%;
+}
+.single_home:before {
+  content: "＊";
+  background-image: url();
+}
+.next {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.next p {
+  margin: 2px;
+  display: inline-block;
+}
+.next span {
+  padding-left: 2px;
+}
+/* MEMBERページ--- */
+.main_box {
+}
+.member_box {
+  width: 1024px;
+  background-color: white;
+  margin: 0 auto;
+}
+.member_title {
+  display: flex;
+  border-bottom: solid 2px #fb6700;
+  padding: 25px 0px 25px 10px;
+  color: #1f2c5c;
+}
+.member_title h2 {
+  font-size: 2.5rem;
+  padding: 0px 3px;
+  font-family: "Arial Narrow Bold", arial, sans-serif;
+}
+.member_title p {
+  display: inline-block;
+  font-size: large;
+  margin-left: 0.5rem;
+  padding-top: 1rem;
+}
+.member_title::before {
+  content: "";
+  display: inline-block;
+  background-image: url(https://daichaaan.github.io/MySite/img/icon_member.png);
+  background-size: contain;
+  width: 48px;
+  margin: 0 10px;
+  height: 40px;
+}
+.member {
+  padding: 1rem;
+  width: 20%;
+  margin: 0;
+}
+.photo img {
+  height: 10rem;
+  width: 10rem;
+  border-radius: 50%;
+  border: solid 0.1px #1f2c5c;
+}
+.member_man {
+  color: #1f2c5c;
+  font-size: 30px;
+  padding: 2rem;
+}
+.mens {
+  width: 100%;
+  display: flex;
+  justify-content: left;
+  flex-wrap: wrap;
+}
+.member_woman {
+  color: #d51a02;
+  font-size: 30px;
+  padding: 2rem;
+}
+.woman {
+  color: #d51a02;
+  width: 100%;
+  display: flex;
+  justify-content: left;
+  flex-wrap: wrap;
+}
+.rady h3 {
+  color: #d51a02;
+}
+.rady img {
+  border: solid 0.1px #d51a02;
+  color: #d51a02;
+}
+.member_photo {
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.member_name {
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 0.5rem;
+  color: #1f2c5c;
+  font-size: 110%;
+}
+.member_name p {
+  padding: 0.5rem 0;
+  height: 3rem;
+  display: inline-block;
+}
+
+/* MATCHページ */
+.match_box {
+  width: 1024px;
+  background-color: white;
+  height: 1450px;
+  margin: 0 auto;
+}
+.match_title {
+  display: flex;
+  border-bottom: solid 2px #fb6700;
+  padding: 25px 0px 25px 10px;
+  color: #1f2c5c;
+}
+.match_title h2 {
+  font-size: 2.5rem;
+  padding: 0px 3px;
+  font-family: "Arial Narrow Bold", arial, sans-serif;
+}
+.match_title p {
+  display: inline-block;
+  font-size: large;
+  margin-left: 0.5rem;
+  padding-top: 1rem;
+}
+.match_title::before {
+  content: "";
+  display: inline-block;
+  background-image: url(https://daichaaan.github.io/MySite/img/icon_member.png);
+  background-size: contain;
+  width: 48px;
+  margin: 0 10px;
+  height: 40px;
+}
+.match_wrap {
+  width: 100%;
+  margin: 0 auto;
+  height: 1000px;
+  padding: 0 0.5rem 0 0.5rem;
+}
+.match_head {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  background-color: white;
+  color: #1f2c5c;
+  padding: 0.5rem 0;
+  border-bottom: dotted 2px #fb6700;
+}
+.match_head a {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  padding: 1rem 0 1rem 0;
+}
+.one {
+  height: 3rem;
+  width: 15%;
+  border-right: solid 1px #eeeeee;
+}
+.two {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  border-right: solid 1px #eeeeee;
+}
+.three {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  border-right: solid 1px #eeeeee;
+}
+.four {
+  width: 10%;
+  border-right: solid 1px #eeeeee;
+}
+.five {
+  width: 15%;
+}
+.match_zone {
+  color: #1f2c5c;
+}
+.zone_detail {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  align-items: center;
+  width: 100%;
+  height: 6rem;
+  background-color: white;
+  padding: 0.5rem 0;
+  border-bottom: dotted 1px #fb6700;
+  font-size: 1rem;
+  line-height: 1.5em;
+}
+.zone_detail div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3.5rem;
+  text-align: center;
+}
+/* scheduleページ */
+.schedule_wrap {
+  width: 1024px;
+  background-color: white;
+  margin: 0 auto;
+}
+.schedule_title {
+    display: flex;
+    border-bottom: solid 2px #fb6700;
+    padding: 25px 0px 25px 10px;
+    color: #1f2c5c;
+}
+.schedule_title h2 {
+  font-size: 2.5rem;
+  padding: 0px 3px;
+  font-family: "Arial Narrow Bold", arial, sans-serif;
+}
+.schedule_title p {
+  display: inline-block;
+  font-size: large;
+  margin-left: 0.5rem;
+  padding-top: 1rem;
+}
+.schedule_title::before {
+  content: "";
+  display: inline-block;
+  background-image: url(https://daichaaan.github.io/MySite/img/icon_schedule.png);
+  background-size: contain;
+  width: 40px;
+  margin: 0 10px;
+  height: 40px;
+}
+.schedule_head {
+  height: 2rem;
+  width: 100%;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-around;
+  margin: 1rem 0;
+}
+.schedule_head h3 {
+  color: white;
+  display: inline-block;
+  background-color: #626262;
+  height: 3rem;
+  padding-top: 0.75rem;
+  font-size: 1.5rem;
+  width: 85%;
+  text-align: center;
+
+}
+.left {
+  border-right: solid 1px white;
+}
+.left span {
+  display: inline-block;
+  width: 100%;
+  height: 3rem;
+  background-image: url(https://daichaaan.github.io/MySite/img/schedule_arrow01.png);
+  background-repeat: no-repeat;
+  background-size: 1rem;
+  background-position: center;
+}
+.right {
+  border-left: solid 1px white;
+}
+.right span {
+  background-image: url(https://daichaaan.github.io/MySite/img/schedule_arrow02.png);
+  display: inline-block;
+  width: 100%;
+  height: 3rem;
+  background-repeat: no-repeat;
+  background-size: 1rem;
+  background-position: center;
+}
+/* schedule-event */
+.event_content {
+  padding: 0 1.5rem;
+}
+.event_main_content {
+  padding-bottom: 2rem;
+  line-height: 2;
+}
+/* profileページ */
+.profile_box {
+  width: 1024px;
+  background-color: white;
+  margin: 0 auto;
+}
+.profile_title {
+  display: flex;
+  border-bottom: solid 2px #fb6700;
+  padding: 25px 0px 25px 10px;
+  color: #1f2c5c;
+}
+.profile_title h2 {
+  font-size: 2.5rem;
+  padding: 0px 3px;
+  font-family: "Arial Narrow Bold", arial, sans-serif;
+}
+.profile_title p {
+  display: inline-block;
+  font-size: large;
+  margin-left: 0.5rem;
+  padding-top: 1rem;
+}
+.profile_title::before {
+  content: "";
+  display: inline-block;
+  background-image: url(https://daichaaan.github.io/MySite/img/icon_profile.png);
+  background-size: contain;
+  width: 48px;
+  margin: 0 10px;
+  height: 40px;
+}
+.profile_wrap {
+  width: 100%;
+  padding: 1rem;
+  height: 600px;
+}
+.summary {
+  width: 100%;
+}
+.summary h2 {
+  font-size: 1.5rem;
+  color: #1f2c5c;
+  margin-bottom: 1rem;
+}
+.summary_box tr {
+  line-height: 2rem;
+}
+.summary_box th {
+  font-size: small;
+  width: 20%;
+  border: 1px solid #a0a0a0;
+  color: #333333;
+  background-color: #eeeeee;
+}
+.summary_box td {
+  font-size: small;
+  width: 80%;
+  border: 1px solid #a0a0a0;
+  color: #333333;
+  background-color: white;
+  padding-left: 10px;
+}
+.history {
+  width: 100%;
+}
+.history h2 {
+  font-size: 1.5rem;
+  color: #1f2c5c;
+  margin: 2rem 0 1rem;
+}
+.history_box {
+  color: #535e82;
+  font-size: smaller;
+  height: auto;
+}
+.history_box span {
+  display: inline-block;
+  width: 2rem;
+  line-height: 1rem;
+  text-align: center;
+  vertical-align: middle;
+  background-color: red;
+  color: white;
+  border-radius: 5px;
+  margin-left: 1rem;
+  font-size: 0.5rem;
+}
+.history_content {
+  line-height: 2rem;
+  background-color: #dee3f8;
+}
+.history_content:nth-child(2n) {
+  background-color: white;
+}
+.history_title a {
+  cursor: pointer;
+}
+.history_time {
+  width: 20%;
+  border-right: solid 2px white;
+  line-height: 1.5rem;
+}
+/* .history_time:nth-child(2n){
+  border-right: solid 2px rgb(202, 42, 42);
+} */
+.history_title {
+  vertical-align: middle;
+  padding: 0.5rem;
+  width: 80%;
+}
+/* .history1:nth-child(2n) {
+  background-color: white;
+  border-right: solid 2px #dee3f8;
+  border-right: solid 2px white;
+} */
+/* bbsページ */
+.bbs_box {
+  width: 1024px;
+  background-color: white;
+  height: 800px;
+  margin: 0 auto;
+}
+.bbs_title {
+  display: flex;
+  border-bottom: solid 2px #fb6700;
+  padding: 25px 0px 25px 10px;
+  color: #1f2c5c;
+}
+.bbs_title h2 {
+  font-size: 2.5rem;
+  padding: 0px 3px;
+  font-family: "Arial Narrow Bold", arial, sans-serif;
+}
+.bbs_title p {
+  display: inline-block;
+  font-size: large;
+  margin-left: 0.5rem;
+  padding-top: 1rem;
+}
+.bbs_title::before {
+  content: "";
+  display: inline-block;
+  background-image: url(https://daichaaan.github.io/MySite/img/icon_profile.png);
+  background-size: contain;
+  width: 48px;
+  margin: 0 10px;
+  height: 40px;
+}
+.bbs_wrap {
+  background-color: wheat;
+  width: 100%;
+  height: 650px;
+  padding: 1rem;
+}
+.bbs_main {
+  width: 100%;
+  height: 618px;
+  padding: 1rem;
+  background-color: #ffa54f;
+  color: #202d5d;
+  font-size: 2rem;
+}
+/* report ページ */
+.report_box {
+  width: 1024px;
+  background-color: white;
+  height: 1300px;
+  margin: 0 auto;
+}
+.report_title {
+  display: flex;
+  border-bottom: solid 2px #fb6700;
+  padding: 25px 0px 25px 10px;
+  color: #1f2c5c;
+}
+.report_title h2 {
+  font-size: 2.5rem;
+  padding: 0px 3px;
+  font-family: "Arial Narrow Bold", arial, sans-serif;
+}
+.report_title p {
+  display: inline-block;
+  font-size: large;
+  margin-left: 0.5rem;
+  padding-top: 1rem;
+}
+.report_title::before {
+  content: "";
+  display: inline-block;
+  background-image: url(https://daichaaan.github.io/MySite/img/icon_report.png);
+  background-size: contain;
+  width: 46px;
+  margin: 0 10px;
+  height: 40px;
+}
+.report_wrap {
+  width: 100%;
+  height: 1300px;
+  padding: 1rem;
+}
+.report_main {
+  width: 100%;
+  height: 1236px;
+  padding: 1rem;
+  color: #202d5d;
+  font-size: 2rem;
+}
+.report_contents {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.report_content {
+  display: inline-block;
+  text-align: center;
+  width: 30%;
+  height: 320px;
+  padding: 1rem 0.5rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+.report_content a {
+  text-align: center;
+  width: 100%;
+  height: 200px;
+}
+.report_content img {
+  width: 95%;
+  height: 200px;
+}
+.report_content p {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+}
+.report_content h3 {
+  line-height: 1;
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+/* お問い合わせページ */
+.contact_form {
+  width: 1024px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+.contact_box {
+  width: 1024px;
+  background-color: white;
+  margin: 0 auto;
+}
+/* お問い合わせタイトル */
+.contact_title_list {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: solid 2px #fb6700;
+}
+.contact_title {
+  display: flex;
+  padding: 25px 0px 25px 10px;
+  color: #1f2c5c;
+}
+.contact_title h2 {
+  font-size: 2.5rem;
+  padding: 0px 3px;
+  font-family: "Arial Narrow Bold", arial, sans-serif;
+}
+.contact_title p {
+  display: inline-block;
+  font-size: large;
+  margin-left: 0.5rem;
+  padding-top: 1rem;
+}
+.contact_title::before {
+  content: "";
+  display: inline-block;
+  background-image: url(../img/icon_form.png);
+  background-size: contain;
+  width: 40px;
+  margin: 0 10px;
+  height: 40px;
+}
+/* Contact Form7 */
+.contact7 {
+  width: 1024px;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+.contact_wrap {
+  line-height: 2rem;
+  width: 100%;
+  padding: 1rem;
+  color: #202d5d;
+}
+.contact_contents {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+.wpcf7 {
+  color: #202d5d;
+}
+.contact_subject {
+  width: 35%;
+  text-align: center;
+  padding-left: 8rem;
+}
+.contact_form_box {
+  width: 65%;
+  margin-left: 1rem;
+}
+.personal_box {
+  display: flex;
+  justify-content: center;
+  padding-top: 0.5rem;
+}
+.personal {
+  padding-left: 1rem;
+}
+/* 必須マーク */
+.contact7 .must {
+  background: #ff1a00;
+}
+/* 任意マーク */
+.contact7 .optional {
+  background: #999;
+}
+.contact7 .must,
+.contact7 .optional {
+  color: #fff;
+  border-radius: 0.5rem;
+  font-size: 0.5rem;
+  margin-left: 1rem;
+  padding: 5px 10px;
+  letter-spacing: 2px;
+}
+.btn_contact7 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0.5rem 0;
+}
+.wpcf7 .wpcf7-submit {
+  width: 50%;
+}
+.btn_contact7 input {
+  width: 70%;
+  background-color: #005513;
+  color: #fff;
+  font-size: 1.1em;
+  font-weight: bold;
+  letter-spacing: 0.2em;
+  border: 1px solid #005513;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -ms-transition: 0.3s;
+  transition: 0.3s;
+}
+.btn_contact7 input:hover {
+  background-color: #fff;
+  color: #202d5d;
+}
+div.wpcf7 .ajax-loader {
+  display: none !important;
+}
+@media screen and (min-width: 768px) {
+  .contact7 dt {
+    float: left;
+    clear: left;
+    width: 35%;
+    padding: 5px 10px 5px 0;
+  }
+  .contact7 dd {
+    margin-left: 35%;
+  }
+
+  .btn_contact7 input {
+    width: 70%;
+    background-color: #202d5d;
+    color: #fff;
+    font-size: 1.1em;
+    font-weight: bold;
+    letter-spacing: 0.2em;
+    border: 1px solid #202d5d;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    -ms-transition: 0.3s;
+    transition: 0.3s;
+  }
+  .btn_contact7 input:hover {
+    background-color: #fff;
+    color: #202d5d;
+  }
+}
+.team_staff {
+  padding-top: 2rem;
+}
